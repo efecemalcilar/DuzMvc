@@ -14,6 +14,11 @@ namespace DuzMvc.Controllers
             DuzDbContext db = new DuzDbContext();
             db.Sahips.ToList();
             return View(db);
+
+            Guid test = Guid.NewGuid();
+            var a = test.ToString();
+            return View();
+
         }
 
         public ActionResult About()
