@@ -9,6 +9,7 @@ namespace DuzMvc.Models
 {
     public class BaseEntity
     {
+
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]  // Base entity deddiği iki tablonun ortak alanı gibi bir şey mi ? 
         public int Id { get; set; }
         [StringLength(50)]
